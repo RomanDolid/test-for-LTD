@@ -16,25 +16,31 @@
     padding-left: 374px;
     padding-right: 374px;
   }
-}
-.main-content-container {
+
+&-container {
   position: relative;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: 315px;
+  max-width: 316px;
   padding-top: 91px;  
   padding-left: 2px;
+  padding-right: 2px;
 
   @include for-size(tablet) {
-    max-width: 1027px;
+    max-width: 1172px;
     padding-top: 133px;
+    padding-left: 100px;
+    // padding-right: 45px;
   }
 
   @include for-size(desktop) {
-    max-width: 1027px;
+    max-width: 1172px;
     padding-top: 133px;
+    padding-left: 100px;
+    // padding-right: 45px;
   }
+}
 }
 .container-line {
   position: absolute;
@@ -44,12 +50,14 @@
   border-right: 1px solid $color-line;
   transform: matrix(1, 0, 0, 1, -2, -91);
 
-  @include for-size(tablet) {
- transform: matrix(1, 0, 0, 1, -2, -133);
+  @include for-size(tablet) {    
+    height: 230%;
+    transform: matrix(1, 0, 0, 1, -100, -133);
   }
 
-  @include for-size(desktop) {
-    transform: matrix(1, 0, 0, 1, -2, -133);
+  @include for-size(desktop) {    
+    height: 230%;
+    transform: matrix(1, 0, 0, 1, -100, -133);
   }
 }
 .center-line {
@@ -60,11 +68,13 @@
   transform: matrix(1, 0, 0, 1, 157, -91);
 
   @include for-size(tablet) {
- transform: matrix(1, 0, 0, 1, 510, -133);
+    height: 230%;
+    transform: matrix(1, 0, 0, 1, 486, -133);
   }
 
   @include for-size(desktop) {
-    transform: matrix(1, 0, 0, 1, 510, -133);
+    height: 230%;
+    transform: matrix(1, 0, 0, 1, 486, -133);
   }
 }
 .main-background-container{
@@ -72,23 +82,29 @@
   max-width: 585px; 
   min-width: 285px; 
   // max-height: 682px;
-  transform: matrix(1, 0, 0, 1, -137, 43);
+  transform: matrix(1, 0, 0, 1, -135, 43);
 
   @include for-size(tablet) {
- transform: matrix(1, 0, 0, 1, 217, 43);
+ transform: matrix(1, 0, 0, 1, 193, 43);
   }
 
   @include for-size(desktop) {
-    transform: matrix(1, 0, 0, 1, 217, 43);
+    transform: matrix(1, 0, 0, 1, 193, 43);
   }
 }
 .logo-icon {
-  width: 585px; 
+  width: 586px; 
   height: 682px;
 }
 
 .main-header {
   position: absolute;
+  @include for-size(tablet) {
+    left: 2px;
+  }
+  @include for-size(desktop) {
+    left: 2px;
+  }
 }
 .header-icon {
   margin-bottom: 25px;
@@ -150,7 +166,7 @@
   @include for-size(tablet) {
     width: 440px;
     height: 251px;
-    margin-right: 143px;
+    margin-right: 147px;
     margin-bottom: 98px;
 
     &:nth-child(2n+2) {
@@ -161,7 +177,7 @@
   @include for-size(desktop) {
     width: 440px;
     height: 251px;
-    margin-right: 143px;
+    margin-right: 147px;
     margin-bottom: 98px;
  
     &:nth-child(2n+2) {

@@ -17,7 +17,20 @@
         </a></div>
 
         <div class="secondary-content-photo">
-          <img src="./images/tablet/Broshure.png" alt="Image Broshure">
+          <picture>
+            <source srcset="./images/Broshure-374.png" media="(max-width: 1439px)" />
+            <source srcset="./images/Broshure-1440.png" media="(min-width: 1440px)" />
+            <source srcset="./images/Broshure-1920.png" media="(min-width: 1920px)" />
+            <img src="./images/Broshure-374.png" alt="Image Broshure">
+          </picture>
+          <!-- <img src="./images/Broshure-374.png" alt="Image Broshure"
+          srcset="
+          ./images/Broshure-374.png (min-width: 375px),
+          ./images/Broshure-1440.png 1440w,
+          ./images/Broshure-1920.png 1920w
+        "sizes=" 374px, (min-width: 1441px) 1440px, 100vw"
+        /> -->
+          
       </div>
       </div>
   </div>
