@@ -22,29 +22,21 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 315px; 
+    max-width: 316px; 
     padding-left: 2px;
     padding-top: 92px;
   
     @include for-size(tablet) {
       padding-top: 167px;
-      max-width: 1027px;
+      max-width: 1172px;
     }
   
     @include for-size(desktop) {
       padding-top: 167px;
-      max-width: 1027px;
+      max-width: 1172px;
     }
   }
-  .footer-header {
-    position: absolute;
-    @include for-size(tablet) {
-      left: -70px;
-    }
-    @include for-size(desktop) {
-      left: -70px;
-    }
-  }
+
   .footer-icon {
     margin-bottom: 25px;
   
