@@ -3,6 +3,7 @@
     padding-left: 31px;
     padding-right: 29px;
     transform: matrix(1, 0, 0, 1, 0, -64);
+    pointer-events: none;
   
     @include for-size(tablet) {
       height: 964px;
