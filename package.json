@@ -1,0 +1,33 @@
+{
+  "name": "test-for-LTD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://RomanDolid.github.io/test-for-LTD",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url=/test-for-LTD/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanDolid/test-for-LTD.git"
+  },
+  "keywords": [],
+  "author": "Roman Dolid <dolid.rv@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanDolid/test-for-LTD/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

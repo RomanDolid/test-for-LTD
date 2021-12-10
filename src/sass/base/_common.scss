@@ -1,0 +1,49 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $background-footer;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+  padding: 0;
+
+}
+main{
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+div {
+  display: block;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.animated {
+  display: block;
+  transform: translatey(100%);
+  opacity: 0;
+  transition: all 0.9s ease 0s ;
+}
+.animated.active {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+

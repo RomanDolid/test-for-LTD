@@ -1,0 +1,76 @@
+.footer-section {
+    height: 724px;
+    padding-left: 31px;
+    padding-right: 29px;
+    transform: matrix(1, 0, 0, 1, 0, -64);
+  
+    @include for-size(tablet) {
+      height: 964px;
+      padding-left: 135px;
+      padding-right: 135px;
+    }
+  
+    @include for-size(desktop) {
+      height: 964px;
+      padding-left: 374px;
+      padding-right: 374px;
+    }
+  }
+  .footer-content {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 315px; 
+    padding-left: 2px;
+    padding-top: 92px;
+  
+    @include for-size(tablet) {
+      padding-top: 167px;
+      max-width: 1027px;
+    }
+  
+    @include for-size(desktop) {
+      padding-top: 167px;
+      max-width: 1027px;
+    }
+  }
+
+  .footer-icon {
+    margin-bottom: 25px;
+  
+    @include for-size(tablet) {
+      width: 28px;
+      height: 29px;
+      margin-bottom: 19px;
+    }
+    @include for-size(desktop) {
+      width: 28px;
+      height: 29px;
+      margin-bottom: 19px;
+    }
+  }
+  
+  .footer-title {  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    letter-spacing: 0.9px;
+    color: $text-black;
+    margin: 0;
+  
+    @include for-size(tablet) {
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.44px;
+    }
+  
+    @include for-size(desktop) {
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.44px;
+    }
+  }
+  

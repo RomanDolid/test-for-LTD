@@ -1,0 +1,240 @@
+.main-content {
+  background-color: $background-main;
+  height: 1341px;
+  padding-left: 31px;
+  padding-right: 29px;
+
+
+  @include for-size(tablet) {
+    height: 1315px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  @include for-size(desktop) {
+    height: 1315px;
+    padding-left: 374px;
+    padding-right: 374px;
+  }
+}
+.main-content-container {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 315px;
+  padding-top: 91px;  
+  padding-left: 2px;
+
+  @include for-size(tablet) {
+    max-width: 1027px;
+    padding-top: 133px;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1027px;
+    padding-top: 133px;
+  }
+}
+.container-line {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  border-left: 1px solid $color-line;
+  border-right: 1px solid $color-line;
+  transform: matrix(1, 0, 0, 1, -2, -91);
+
+  @include for-size(tablet) {
+ transform: matrix(1, 0, 0, 1, -2, -133);
+  }
+
+  @include for-size(desktop) {
+    transform: matrix(1, 0, 0, 1, -2, -133);
+  }
+}
+.center-line {
+  position: absolute;
+  width: 1px;
+  height: 200%;
+  background-color: $color-line;
+  transform: matrix(1, 0, 0, 1, 157, -91);
+
+  @include for-size(tablet) {
+ transform: matrix(1, 0, 0, 1, 510, -133);
+  }
+
+  @include for-size(desktop) {
+    transform: matrix(1, 0, 0, 1, 510, -133);
+  }
+}
+.main-background-container{
+  position: absolute;
+  max-width: 585px; 
+  min-width: 285px; 
+  // max-height: 682px;
+  transform: matrix(1, 0, 0, 1, -137, 43);
+
+  @include for-size(tablet) {
+ transform: matrix(1, 0, 0, 1, 217, 43);
+  }
+
+  @include for-size(desktop) {
+    transform: matrix(1, 0, 0, 1, 217, 43);
+  }
+}
+.logo-icon {
+  width: 585px; 
+  height: 682px;
+}
+
+.main-header {
+  position: absolute;
+}
+.header-icon {
+  margin-bottom: 25px;
+
+  @include for-size(tablet) {
+    width: 28px;
+    height: 29px;
+    margin-bottom: 18px;
+  }
+  @include for-size(desktop) {
+    width: 28px;
+    height: 29px;
+    margin-bottom: 18px;
+  }
+}
+
+.header-title {  
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: left;
+  letter-spacing: 0.9px;
+  color: $text-white;
+  margin: 0;
+
+  @include for-size(tablet) {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 1.44px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 1.44px;
+  }
+}
+
+.main-content-list {
+  padding-top: 177px;
+
+  @include for-size(tablet) {
+    padding-top: 284px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 284px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.main-content-item {
+  position: relative;
+  margin-bottom: 50px;
+
+  @include for-size(tablet) {
+    width: 440px;
+    height: 251px;
+    margin-right: 143px;
+    margin-bottom: 98px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0px;
+    }
+  }
+
+  @include for-size(desktop) {
+    width: 440px;
+    height: 251px;
+    margin-right: 143px;
+    margin-bottom: 98px;
+ 
+    &:nth-child(2n+2) {
+      margin-right: 0px;
+    }
+  }
+
+}
+
+
+.main-content-item-icon {
+  margin-bottom: 17px;
+
+  @include for-size(tablet) {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 25px;
+  }
+  @include for-size(desktop) {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 25px;
+  }
+}
+.main-content-item-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: 0.44px;
+  color: $text-white;
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  @include for-size(tablet) {
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.64px;
+    margin-bottom: 50px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.64px;
+    margin-bottom: 50px;
+  }
+}
+
+.main-content-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.32px;
+  color: $text-gray;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include for-size(tablet) {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+  }
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+  }
+}
+
+
+

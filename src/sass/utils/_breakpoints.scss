@@ -1,0 +1,26 @@
+// breakpoints
+
+@mixin for-size($range) {
+  $mobile: 375px;
+  $tablet: 1440px;
+  $desktop: 1920px;
+
+  @if $range == small-phone {
+    @media (max-width: #{$mobile}) {
+      @content;
+    }
+  } @else if $range == phone {
+    @media (max-width: #{$tablet - 1}) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: $tablet) and (max-width: #{$desktop - 1}) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
